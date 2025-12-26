@@ -1,0 +1,18 @@
+{
+    "users" : [
+        {
+            "user_id" : 1,
+            "name" : "Lahari",
+            "email" : "laharitummala@gmail.com",
+            "password":"lahari123",
+            "role":"admin"
+        },
+        {
+            "user_id" : 2,
+            "name" : "Bhargav",
+            "email" : "bhargav5127@gmail.com",
+            "password" : "bhargav321",
+            "role" : "admin"
+        }
+    ]
+}
