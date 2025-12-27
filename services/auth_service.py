@@ -16,8 +16,6 @@ def register_user(name,email,password):
         if user["email"] == email:
             return False, "Email already exists"
         
-        
-        
     new_user_id = users[-1]["user_id"] + 1 if users else 1
     
     # create user object
@@ -29,8 +27,23 @@ def register_user(name,email,password):
         role="user"
     )
     
-    users.append(new_user.to_dict())
-    data["users"] = users
-    save_json(USERS_FILE,data)
+    users.append(new_user.to_dict()) # convert user-->dict, add to users list
+    data["users"] = users # put updated users back
+    save_json(USERS_FILE,data) # save into JSON file
     
     return True, "User registered successfully"
+
+
+
+def login_user(email,password):
+    data = load_user(USERS_FILE)
+    users = data.get("users",[])
+    
+    for user in users:
+        if user["email"] == email:
+            if user["password"] == password:
+                return True, user  # Login succes
+            else:
+                return False, "Incorrect password"
+            
+    return False, "Email not found"
