@@ -5,7 +5,12 @@
             "name": "Lahari",
             "email": "laharitummala@gmail.com",
             "password": "lahari123",
-            "role": "admin"
+            "role": "user",
+            "borrowed_books": [
+                1,
+                2,
+                3
+            ]
         },
         {
             "user_id": 2,
@@ -19,35 +24,44 @@
             "name": "Anitha",
             "email": "anithatummala.com",
             "password": "1234",
-            "role": "user"
+            "role": "user",
+            "borrowed_books": []
         },
         {
             "user_id": 4,
             "name": "Ram",
             "email": "ram@gmail.com",
             "password": "Ram12345#",
-            "role": "user"
+            "role": "user",
+            "borrowed_books": []
         },
         {
             "user_id": 5,
             "name": "Jam",
             "email": "jam@gmail.com",
             "password": "Jam12345%",
-            "role": "user"
+            "role": "user",
+            "borrowed_books": [
+                2,
+                3,
+                3
+            ]
         },
         {
             "user_id": 6,
             "name": "krishna",
             "email": "krishna@gmail.com",
             "password": "12345@asdA",
-            "role": "user"
+            "role": "user",
+            "borrowed_books": []
         },
         {
             "user_id": 7,
             "name": "air",
             "email": "air@gmail.com",
-            "password": "123456A@ss",
-            "role": "user"
+            "password": "123456AIR",
+            "role": "user",
+            "borrowed_books": []
         }
     ]
 }

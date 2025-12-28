@@ -1,5 +1,5 @@
 from services.book_service import add_new_book, view_books
-
+from services.transaction_service import issue_book,view_borrowed_books
 def get_non_empty_string(prompt):
     value = input(prompt).strip()
     while value == "":
@@ -54,15 +54,30 @@ def admin_menu():
             print("Invalid choice")
         
     
-def user_menu():
+def user_menu(user):
     while True:
         print("\n --- User Menu ---")
         print("1. View books")
-        print("2. Logout")
+        print("2. Borrow book")
+        print("3. View Borrowed books")
+        print("4. Logout")
         choice = input("Enter choice :")
         if choice == "1":
             view_books()
         elif choice == "2":
+            view_books()
+            book_id = input('Enter book ID to borrow: ')
+            if book_id.isdigit():
+                issue_book(user,int(book_id))
+                
+            else:
+                print("Invalid book ID")
+        
+        elif choice == "3":
+            view_borrowed_books(user)
+            
+        elif choice == "4":
+            print("Logged out")
             break
         else:
             print("Invalid choice")

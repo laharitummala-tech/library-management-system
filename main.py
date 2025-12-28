@@ -32,7 +32,7 @@ def main():
         if user["role"] == "admin":
             admin_menu()
         else:
-            user_menu()
+            user_menu(user)
 
 
 if __name__ == "__main__":

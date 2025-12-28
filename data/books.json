@@ -7,8 +7,8 @@
             "publisher": "O'Reilly",
             "published_year": 2020,
             "total_copies": 20,
-            "available_copies": 20,
-            "borrow_count": 0
+            "available_copies": 18,
+            "borrow_count": 2
         },
         {
             "book_id": 2,
@@ -17,8 +17,8 @@
             "publisher": "Pearson",
             "published_year": 2018,
             "total_copies": 5,
-            "available_copies": 3,
-            "borrow_count": 4
+            "available_copies": 0,
+            "borrow_count": 7
         },
         {
             "book_id": 3,
@@ -27,8 +27,8 @@
             "publisher": "Scribner",
             "published_year": 1925,
             "total_copies": 6,
-            "available_copies": 6,
-            "borrow_count": 0
+            "available_copies": 1,
+            "borrow_count": 5
         },
         {
             "book_id": 4,
