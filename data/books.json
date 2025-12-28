@@ -6,8 +6,8 @@
             "author": "Guido van Rossum",
             "publisher": "O'Reilly",
             "published_year": 2020,
-            "total_copies": 20,
-            "available_copies": 18,
+            "total_copies": 10,
+            "available_copies": 8,
             "borrow_count": 2
         },
         {
@@ -17,8 +17,8 @@
             "publisher": "Pearson",
             "published_year": 2018,
             "total_copies": 10,
-            "available_copies": 0,
-            "borrow_count": 7
+            "available_copies": 10,
+            "borrow_count": 0
         },
         {
             "book_id": 3,
@@ -26,9 +26,9 @@
             "author": "F. Scott Fitzgerald",
             "publisher": "Scribner",
             "published_year": 1925,
-            "total_copies": 6,
-            "available_copies": 1,
-            "borrow_count": 5
+            "total_copies": 10,
+            "available_copies": 10,
+            "borrow_count": 0
         },
         {
             "book_id": 4,
@@ -36,9 +36,9 @@
             "author": "Guido van Rossum",
             "publisher": "ME",
             "published_year": 2022,
-            "total_copies": 22,
-            "available_copies": 22,
-            "borrow_count": 0
+            "total_copies": 10,
+            "available_copies": 9,
+            "borrow_count": 1
         }
     ]
 }
