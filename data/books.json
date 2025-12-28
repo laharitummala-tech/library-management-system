@@ -16,7 +16,7 @@
             "author": "Mark Allen Weiss",
             "publisher": "Pearson",
             "published_year": 2018,
-            "total_copies": 5,
+            "total_copies": 10,
             "available_copies": 0,
             "borrow_count": 7
         },
@@ -38,16 +38,6 @@
             "published_year": 2022,
             "total_copies": 22,
             "available_copies": 22,
-            "borrow_count": 0
-        },
-        {
-            "book_id": 5,
-            "title": "Lahari",
-            "author": "Lahari",
-            "publisher": "PS",
-            "published_year": 2002,
-            "total_copies": 12,
-            "available_copies": 12,
             "borrow_count": 0
         }
     ]
