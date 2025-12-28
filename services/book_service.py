@@ -3,6 +3,17 @@ from models.books import Book
 
 BOOKS_FILE = "data/books.json"
 
+def view_books():
+    data = load_user(BOOKS_FILE)
+    books = data.get("books",[])
+    
+    if not books:
+        print("No books available")
+        return 
+    
+    for book in books:
+        print(f'{book["book_id"]} - {book["title"]} by {book["author"]}')
+
 def add_new_book(title,author,publisher,published_year,total_copies):
     data = load_user(BOOKS_FILE)
     books = data.get("books",[])

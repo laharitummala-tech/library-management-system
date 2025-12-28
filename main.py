@@ -1,40 +1,39 @@
-from services.book_service import add_new_book
+# from services.book_service import add_new_book
 
-add_new_book("The Great Gatsby", "F. Scott Fitzgerald", "Scribner", 1925, 3)
-add_new_book("Python Programming","Guido van Rossum","O'Reilly", 2020,10)
-add_new_book("Python Programming","Guido van Rossum","ME", 2022,10)
+# add_new_book("The Great Gatsby", "F. Scott Fitzgerald", "Scribner", 1925, 3)
+# add_new_book("Python Programming","Guido van Rossum","O'Reilly", 2020,10)
+# add_new_book("Python Programming","Guido van Rossum","ME", 2022,10)
 
-#--------------------------------REGISTER ----------------------------
-# from services.auth_service import register_user
-# success,message = register_user(
-#     name = "Anitha",
-#     email= "anithatummala.com",
-#     password="1234"
-# )
+from utils.menu import admin_menu,user_menu
+from utils.register_login_flow import register_flow,login_flow
+def main():
+    while True:
+        print("\n==== Library System ====")
+        print("1. Register")
+        print("2. Login")
+        print("3. Exit")
 
-# print(success,message)
-#--------------------LOGIN------------------------------------#
-# from services.auth_service import login_user
-# email = input("Enter email: ")
-# success,result = login_user(email,"")
+        choice = input("Choose option: ")
+        user = None
+        if choice == "1":
+            user = register_flow()
+        elif choice == "2":
+            user = login_flow()
+        elif choice == "3":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice")
+            continue
+        
+        if not user:
+            continue
+        
+        if user["role"] == "admin":
+            admin_menu()
+        else:
+            user_menu()
 
-# if result == "Email not found":
-#     print("Email not registered. Please register first.")
-# else:
-#     MAX_ATTEMPTS = 3
-#     for i in range(MAX_ATTEMPTS):
-#         password = input("Enter password :")
-#         success,message=login_user(email,password)
-    
-#         if success:
-#             print("Login success")
-#             print(message)
-#             break
-    
-#         else:
-#             remaining = MAX_ATTEMPTS - i - 1
-#             print(message)
-#             if remaining > 0:
-#                 print(f"Attempts left : {remaining}")
-#             else:
-#                 print("Account locked, try again")
+
+if __name__ == "__main__":
+    main()

@@ -10,7 +10,7 @@
         {
             "user_id": 2,
             "name": "Bhargav",
-            "email": "bhargav5127@gmail.com",
+            "email": "bhargav5217@gmail.com",
             "password": "bhargav321",
             "role": "admin"
         },
@@ -19,6 +19,34 @@
             "name": "Anitha",
             "email": "anithatummala.com",
             "password": "1234",
+            "role": "user"
+        },
+        {
+            "user_id": 4,
+            "name": "Ram",
+            "email": "ram@gmail.com",
+            "password": "Ram12345#",
+            "role": "user"
+        },
+        {
+            "user_id": 5,
+            "name": "Jam",
+            "email": "jam@gmail.com",
+            "password": "Jam12345%",
+            "role": "user"
+        },
+        {
+            "user_id": 6,
+            "name": "krishna",
+            "email": "krishna@gmail.com",
+            "password": "12345@asdA",
+            "role": "user"
+        },
+        {
+            "user_id": 7,
+            "name": "air",
+            "email": "air@gmail.com",
+            "password": "123456A@ss",
             "role": "user"
         }
     ]
